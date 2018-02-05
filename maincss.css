@@ -1,0 +1,63 @@
+:root {
+	--color1: #333;
+	--color2: #999;
+	--color3: blue;
+	--background1: #fff;
+	--background2: #bbb;
+	--grid-size: 16;
+	--grid-gap: 2px;
+}
+
+body {
+  background: linear-gradient(130deg, var(--background1) 0%, var(--background2) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+#container {
+  display: grid;
+  grid-gap: var(--grid-gap);
+  padding: 0px;
+  grid-template-columns: repeat(var(--grid-size), 1fr);
+  grid-template-rows: repeat(var(--grid-size), 1fr);
+  margin: 60px auto 30px;
+  width: 500px;
+  height: 500px;
+  border: 2px solid var(--color1);
+}
+
+.square {
+  background: var(--color2);
+
+}
+
+#controls {
+  width: 500px;
+  padding: 0 40px 0;
+  margin: 20px auto 20px;
+}
+
+#input {
+  margin-top: 16px;
+  border: 1px solid var(--color1);
+  font-size: 16px;
+  color: var(--color1);
+  width: 30px;
+  text-align: center;
+}
+
+p {
+  color: var(--color1);
+  font-size: 16px;
+  font-family: system-ui;
+  margin: 0;
+}
+
+h1 {
+  color: var(--color1);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: system-ui;
+  margin-top:20px;
+}
